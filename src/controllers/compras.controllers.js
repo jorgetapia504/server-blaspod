@@ -136,12 +136,12 @@ export const updateCompra = async (req, res) => {
                     port: 465,
                     secure: true,
                     auth: {
-                        user: 'contacto@blaspod.cl',
+                        user: 'ayuda@blaspod.cl',
                         pass: 'Estevan5966@',
                     },
                 })
                 await transporter.sendMail({
-                    from: '"Blaspod Store" <contacto@blaspod.cl>',
+                    from: '"Blaspod Store" <ayuda@blaspod.cl>',
                     to: compra.email,
                     subject: `¡${compra.nombre} Tu compra ha ha sido generada y pagada con exito!`,
                     html: `<div style="display: flex; margin: 20px;">

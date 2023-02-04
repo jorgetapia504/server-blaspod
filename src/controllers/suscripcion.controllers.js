@@ -44,12 +44,12 @@ export const createSuscripcion = async (req, res) => {
                 port: 465,
                 secure: true,
                 auth: {
-                    user: 'contacto@blaspod.cl',
+                    user: 'ayuda@blaspod.cl',
                     pass: 'Estevan5966@',
                 },
             })
             await transporter.sendMail({
-                from: '"Blaspod Store" <contacto@blaspod.cl>',
+                from: '"Blaspod Store" <ayuda@blaspod.cl>',
                 to: email,
                 subject: "¡Te damos la bienvenida a Blaspod Store! Nos hace muy felices tenerte con nosotros",
                 html: `<div style="display: flex; margin: 20px;">
